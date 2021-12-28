@@ -391,6 +391,54 @@ table tbody th {
   border-radius: 0.5em;
 }
 
+.admin {
+  min-height: 100vh;
+  background-color: #f7f9fe;
+}
+
+.admin .navbar {
+  background-color: #ffffff;
+}
+
+.admin .navbar .navbar-text {
+  color: #1d2b4f;
+}
+
+.admin .navbar .btn {
+  border-radius: 1em;
+}
+
+.admin .navbar .btn:hover {
+  width: 7em;
+}
+
+.admin .navbar .photo-profile img {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #0e63f3;
+  border-radius: 100%;
+}
+
+.admin .navbar .dropdown-menu {
+  margin-left: -7em;
+}
+
+.admin .data {
+  height: 20em;
+  overflow: auto;
+}
+
+.admin .card {
+  border: none;
+  background-color: #1d2b4f;
+  color: #ffffff;
+  border-radius: 0.5em;
+}
+
+.admin .card p {
+  color: inherit;
+}
+
 @media screen and (min-width: 768px) {
   .btn-down {
     display: none;
@@ -404,6 +452,9 @@ table tbody th {
   .home .navbar .navbar-brand img {
     display: none;
   }
+  .admin .navbar .navbar-brand img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -411,6 +462,12 @@ table tbody th {
     margin-left: 0;
   }
   main .navbar-brand img {
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+    display: block;
+  }
+  .admin .navbar-brand img {
     width: 2em;
     height: 2em;
     border-radius: 0.5em;

@@ -1,0 +1,449 @@
+<html lang="en">
+  <head>
+    <!-- Copyright @ 2021 Sistem Pakar Pendeteksi Penyakit Menggunakan Metode Forward Chaining -->
+    <!-- Meta TAG -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="title" content="Sistem Pakar Pendeteksi Penyakit Menggunakan Metode Forward Chaining" />
+    <meta name="description" content="Sistem informasi yang berisi pengetahuan seorang pakar sehingga dapat digunakan untuk konsultasi" />
+    <meta name="keywords" content="sistem, pakar, metode, forward, chaining, pendeteksi, penyakit, umum" />
+    <meta name="googlebot" content="noindex" />
+    <!-- Website Title -->
+    <title>Dashboard Admin | Sistem Pakar Forward Chaining</title>
+    <!-- Favicon Website -->
+    <link href="../assets/img/logo.png" alt="logo" rel="icon" />
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Dashboard Admin Start -->
+    <section class="admin pb-3">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-light">
+        <div class="container">
+          <div class="navbar-brand">
+            <img src="../assets/img/logo_only.png" alt="logo_only" loading="lazy" />
+          </div>
+          <div class="navbar-text fw-bold fs-5">Dashboard Admin</div>
+          <div class="navbar-nav ms-auto d-inline">
+            <a class="btn btn-primary fw-bold me-2">User</a>
+            <div class="dropdown d-inline">
+              <a href="#" class="photo-profile" role="button" id="dropdownProfile" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../assets/img/pp.png" alt="pp" loading="lazy" />
+              </a>
+              <ul class="dropdown-menu position-absolute" aria-labelledby="dropdownProfile">
+                <li>
+                  <a href="#" class="dropdown-item"><span class="iconify icon me-2" data-icon="cil:account-logout" data-width="35"></span>Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Main Start -->
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="row d-flex justify-content-around align-items-center">
+              <div class="col-3">
+                <div class="card p-2 text-center">
+                  <h5 class="fw-bold">4</h5>
+                  <p>Penyakit</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card p-2 text-center">
+                  <h5 class="fw-bold">10</h5>
+                  <p>Gejala</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card p-2 text-center">
+                  <h5 class="fw-bold">10</h5>
+                  <p>Basis Pengetahuan</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card p-2 text-center">
+                  <h5 class="fw-bold">10</h5>
+                  <p>Aturan</p>
+                </div>
+              </div>
+            </div>
+            <h5 class="fw-bold mt-4">Data Penyakit</h5>
+            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addPenyakit">Tambah</button>
+            <div class="data bg-white p-3">
+              <!-- Table Start -->
+              <table class="table table-responsive table-bordered">
+                <tbody>
+                  <tr style="background-color: #0e63f3; color: #fff">
+                    <td>Penyakit</td>
+                    <td>:</td>
+                    <td class="text-center fw-bold">Hepatitis B</td>
+                    <td><a href="#" class="btn btn-secondary">Sumber</a><a href="#" class="btn btn-danger float-end">Hapus</a><a href="#" class="btn btn-success me-1 float-end">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>Kode</td>
+                    <td>:</td>
+                    <td colspan="2">P01</td>
+                  </tr>
+                  <tr>
+                    <td>Deskripsi</td>
+                    <td>:</td>
+                    <td colspan="2">Hepatitis B adalah peradangan organ hati yang disebabkan oleh virus Hepatitis B. Virus ini dapat menular melalui hubungan seksual atau berbagi jarum suntik</td>
+                  </tr>
+                  <tr>
+                    <td>Solusi</td>
+                    <td>:</td>
+                    <td colspan="2">Diberikan vaksin untuk memperkuat sistem imunitas tubuh guna mencegah perkembangan virus dalam tubuh</td>
+                  </tr>
+                  <tr style="background-color: #0e63f3; color: #fff">
+                    <td>Penyakit</td>
+                    <td>:</td>
+                    <td class="text-center fw-bold">Hepatitis B</td>
+                    <td><a href="#" class="btn btn-secondary">Sumber</a><a href="#" class="btn btn-danger float-end">Hapus</a><a href="#" class="btn btn-success me-1 float-end">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>Kode</td>
+                    <td>:</td>
+                    <td colspan="2">P01</td>
+                  </tr>
+                  <tr>
+                    <td>Deskripsi</td>
+                    <td>:</td>
+                    <td colspan="2">Hepatitis B adalah peradangan organ hati yang disebabkan oleh virus Hepatitis B. Virus ini dapat menular melalui hubungan seksual atau berbagi jarum suntik</td>
+                  </tr>
+                  <tr>
+                    <td>Solusi</td>
+                    <td>:</td>
+                    <td colspan="2">Diberikan vaksin untuk memperkuat sistem imunitas tubuh guna mencegah perkembangan virus dalam tubuh</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Table End -->
+            </div>
+            <h5 class="fw-bold mt-4">Data Gejala</h5>
+            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addGejala">Tambah</button>
+            <div class="data bg-white p-3">
+              <!-- Table Start -->
+              <table class="table table-responsive table-striped">
+                <thead>
+                  <tr>
+                    <th style="border-radius: 0.5em 0 0 0">No</th>
+                    <th>Kode</th>
+                    <th>Nama Gejala</th>
+                    <th>Pertanyaan</th>
+                    <th style="border-radius: 0 0.5em 0 0">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <th>G01</th>
+                    <th>Lemas atau Mudah Lelah</th>
+                    <th>Apakah anda merasakan Lemas atau Mudah Lelah?</th>
+                    <th><a href="#" class="btn btn-success m-1">Edit</a><a href="#" class="btn btn-danger m-1">Hapus</a></th>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Table End -->
+            </div>
+            <h5 class="fw-bold mt-4">Basis Pengetahuan</h5>
+            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addBasisPengetahuan">Tambah</button>
+            <div class="data bg-white p-3">
+              <!-- Table Start -->
+              <table class="table table-responsive table-striped">
+                <thead>
+                  <tr>
+                    <th style="border-radius: 0.5em 0 0 0">No</th>
+                    <th>Penyakit</th>
+                    <th>Gejala</th>
+                    <th style="border-radius: 0 0.5em 0 0">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <th>[P01] Hepatitis B</th>
+                    <th>[G01] Lemas atau Mudah Lelah</th>
+                    <th><a href="#" class="btn btn-success m-1">Edit</a><a href="#" class="btn btn-danger m-1">Hapus</a></th>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Table End -->
+            </div>
+            <h5 class="fw-bold mt-4">Aturan</h5>
+            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addAturan">Tambah</button>
+            <div class="data bg-white p-3">
+              <!-- Table Start -->
+              <table class="table table-responsive table-striped">
+                <thead>
+                  <tr>
+                    <th style="border-radius: 0.5em 0 0 0">No</th>
+                    <th>Jika</th>
+                    <th>Maka</th>
+                    <th style="border-radius: 0 0.5em 0 0">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <th>G01ANDG02ANDG03</th>
+                    <th>P01</th>
+                    <th><a href="#" class="btn btn-success m-1">Edit</a><a href="#" class="btn btn-danger m-1">Hapus</a></th>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Table End -->
+            </div>
+          </div>
+          <div class="col-sm-4 mt-4 mt-lg-0">
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+              <strong>Halo,</strong><br />Super Admin<span class="iconify ms-2" data-icon="noto:pill" data-width="20"></span>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <h5 class="fw-bold">Data User</h5>
+            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addUser">Tambah</button>
+            <div class="data bg-white p-3" style="height: auto">
+              <!-- Table Start -->
+              <table class="table table-responsive table-striped">
+                <thead>
+                  <tr>
+                    <th style="border-radius: 0.5em 0 0 0">No</th>
+                    <th>ID</th>
+                    <th>Role</th>
+                    <th>Nama</th>
+                    <th style="border-radius: 0 0.5em 0 0">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <th>SPK001</th>
+                    <th>User</th>
+                    <th>User</th>
+                    <th><a href="#" class="btn btn-success m-1">Edit</a><a href="#" class="btn btn-danger m-1">Hapus</a></th>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Table End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main End -->
+      <!-- Modal Add Penyakit Start -->
+      <div class="modal fade" id="addPenyakit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tambahPenyakit" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header Start -->
+            <div class="modal-header">
+              <span class="iconify icon me-4" data-icon="bx:bxs-virus" data-width="45"></span>
+              <h5>Data Penyakit</h5>
+              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Header End -->
+            <!-- Modal Body Start -->
+            <div class="modal-body">
+              <form action="#" method="post">
+                <div class="p-2">
+                  <label for="#" class="form-label">Kode</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required disabled />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Nama Penyakit</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Deskripsi</label>
+                  <textarea type="text" class="form-control" name="#" autocomplete="off" required rows="5"></textarea>
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Solusi</label>
+                  <textarea type="text" class="form-control" name="#" autocomplete="off" required></textarea>
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Sumber</label>
+                  <input type="text" class="form-control" name="#" placeholder="Copy kan link sumber disini..." autocomplete="off" required />
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 float-end">Simpan</button>
+              </form>
+            </div>
+            <!-- Modal Body End -->
+          </div>
+        </div>
+      </div>
+      <!-- Modal Add Penyakit End -->
+      <!-- Modal Add Gejala Start -->
+      <div class="modal fade" id="addGejala" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tambahPenyakit" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header Start -->
+            <div class="modal-header">
+              <span class="iconify icon me-4" data-icon="medical-icon:i-infectious-diseases" data-width="45"></span>
+              <h5>Data Gejala</h5>
+              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Header end -->
+            <!-- Modal Body Start -->
+            <div class="modal-body">
+              <form action="#" method="post">
+                <div class="p-2">
+                  <label for="#" class="form-label">Kode</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required disabled />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Nama Gejala</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Pertanyaan</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 float-end">Simpan</button>
+              </form>
+            </div>
+            <!-- Modal Body End -->
+          </div>
+        </div>
+      </div>
+      <!-- Modal Add Gejala End -->
+      <!-- Modal Add Basis Pengetahuan Start -->
+      <div class="modal fade" id="addBasisPengetahuan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tambahPenyakit" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header Start -->
+            <div class="modal-header">
+              <span class="iconify icon me-4" data-icon="simple-icons:knowledgebase" data-width="45"></span>
+              <h5>Basis Pengetahuan</h5>
+              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Header end -->
+            <!-- Modal Body Start -->
+            <div class="modal-body">
+              <form action="#" method="post">
+                <div class="p-2">
+                  <label for="#" class="form-label">Penyakit</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Gejala</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 float-end">Simpan</button>
+              </form>
+            </div>
+            <!-- Modal Body End -->
+          </div>
+        </div>
+      </div>
+      <!-- Modal Add Basis Pengetahuan End -->
+      <!-- Modal Add Aturan Start -->
+      <div class="modal fade" id="addAturan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tambahPenyakit" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header Start -->
+            <div class="modal-header">
+              <span class="iconify icon me-4" data-icon="codicon:law" data-width="45"></span>
+              <h5>Aturan</h5>
+              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Header end -->
+            <!-- Modal Body Start -->
+            <div class="modal-body">
+              <form action="#" method="post">
+                <div class="p-2">
+                  <label for="#" class="form-label">Jika</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Maka</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 float-end">Simpan</button>
+              </form>
+            </div>
+            <!-- Modal Body End -->
+          </div>
+        </div>
+      </div>
+      <!-- Modal Add Aturan End -->
+      <!-- Modal Add User Start -->
+      <div class="modal fade" id="addUSer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tambahPenyakit" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header Start -->
+            <div class="modal-header">
+              <span class="iconify icon me-4" data-icon="healthicons:ui-user-profile" data-width="45"></span>
+              <h5>Data User</h5>
+              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Header end -->
+            <!-- Modal Body Start -->
+            <div class="modal-body">
+              <form action="#" method="post">
+                <div class="p-2">
+                  <label for="#" class="form-label">Nama</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Alamat</label>
+                  <input type="text" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">No Telepon</label>
+                  <input type="number" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="row p-2">
+                  <div class="col">
+                    <label for="#" class="form-label">ID User</label>
+                    <input type="text" class="form-control" name="#" autocomplete="off" required disabled />
+                  </div>
+                  <div class="col">
+                    <label for="#" class="form-label">Role</label>
+                    <select class="form-select">
+                      <option value="user">User</option>
+                      <option value="admin">Admin</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Username</label>
+                  <input type="number" class="form-control" name="#" autocomplete="off" required />
+                </div>
+                <div class="p-2">
+                  <label for="#" class="form-label">Password</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control border-end-0" placeholder="Password" name="#" id="myPassword" autocomplete="off" required />
+                    <div class="input-group-text border-start-0 bg-transparent" onclick="showPassword()">
+                      <span class="iconify" data-icon="akar-icons:eye-closed" data-width="25"></span>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 float-end">Simpan</button>
+              </form>
+            </div>
+            <!-- Modal Body End -->
+            <!-- Modal Body End -->
+          </div>
+        </div>
+      </div>
+      <!-- Modal Add User End -->
+    </section>
+    <!-- Dashboard Admin End -->
+
+    <!-- Javascript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Icon Iconify -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  </body>
+</html>

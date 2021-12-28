@@ -349,6 +349,48 @@ table {
   }
 }
 
+// Admin Style
+.admin {
+  min-height: 100vh;
+  background-color: $bg-secondary;
+  .navbar {
+    background-color: $bg-primary;
+    .navbar-text {
+      color: $text-primary;
+    }
+    .btn {
+      border-radius: 1em;
+      &:hover {
+        width: 7em;
+      }
+    }
+    .photo-profile {
+      img {
+        width: 2.2em;
+        height: 2.2em;
+        background-color: $primary-color;
+        border-radius: 100%;
+      }
+    }
+    .dropdown-menu {
+      margin-left: -7em;
+    }
+  }
+  .data {
+    height: 20em;
+    overflow: auto;
+  }
+  .card {
+    border: none;
+    background-color: $text-primary;
+    color: $bg-primary;
+    border-radius: 0.5em;
+    p {
+      color: inherit;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   //   Global Style
   .btn-down {
@@ -375,12 +417,33 @@ table {
       }
     }
   }
+
+  // Admin Style
+  .admin {
+    .navbar {
+      .navbar-brand {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   // Global Style
   main {
     margin-left: 0;
+    .navbar-brand {
+      img {
+        width: 2em;
+        height: 2em;
+        border-radius: 0.5em;
+        display: block;
+      }
+    }
+  }
+  .admin {
     .navbar-brand {
       img {
         width: 2em;
